@@ -1,11 +1,15 @@
 import os
+import sys
 import math
 import shutil
 import numpy as np
 import argparse
 from tum_rgbd import get_calib
+code_dir = os.path.dirname(os.path.realpath(__file__)).split("dataset")[0]
 from utils import load_config
 
+# list all python directories in the current working directory
+print("Print the current working directory:", os.getcwd())
 
 def read_file_list(filename):
     """
